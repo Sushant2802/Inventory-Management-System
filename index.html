@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Inventory Management System</h2>
+            <nav>
+                <button class="nav-button active" data-page="basic-info">Basic Information</button>
+                <button class="nav-button" data-page="operational-tasks">Operational Tasks</button>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1>Inventory and Supply Chain Dashboard</h1>
+            </header>
+            
+            <section id="basic-info-page" class="page active">
+                <div id="basic-metrics-section" class="card-container"></div>
+                <hr>
+                <div id="additional-tables-section"></div>
+            </section>
+
+            <section id="operational-tasks-page" class="page">
+                <h2>Operational Tasks</h2>
+                <select id="task-selector">
+                    <option value="add-product">Add New Product</option>
+                    <option value="product-history">Product History</option>
+                    <option value="place-reorder">Place Reorder</option>
+                    <option value="receive-reorder">Receive Reorder</option>
+                </select>
+                
+                <div id="task-container">
+                    </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
